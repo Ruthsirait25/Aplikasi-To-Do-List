@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+h1 {
+    margin: 0;
+    color: #4a90e2;
+}
+
+.btn-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn-add {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-add:hover {
+    background-color: #357abd;
+}
+
+.filters {
+    margin: 20px 0;
+}
+
+ul#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task.low {
+    border-left: 5px solid #a4c639;
+}
+
+.task.medium {
+    border-left: 5px solid #f5a623;
+}
+
+.task.high {
+    border-left: 5px solid #d0021b;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: #d0021b;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2e2e2e;
+    color: #ddd;
+}
+
+body.dark-mode header {
+    border-bottom: 2px solid #444;
+}
+
+body.dark-mode .btn-toggle {
+    color: #ddd;
+}
+
+body.dark-mode input[type="text"], 
+body.dark-mode input[type="date"], 
+body.dark-mode select {
+    background-color: #333;
+    color: #ddd;
+    border: 1px solid #555;
+}
+
+body.dark-mode .btn-add {
+    background-color: #357abd;
+}
+
+body.dark-mode ul#task-list li {
+    background-color: #444;
+    border-bottom: 1px solid #555;
+}
+
+body.dark-mode .remove-button {
+    color: #d0021b;
+}
